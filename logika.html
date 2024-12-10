@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Welcome to your Jupyter Book &#8212; My book</title>
+    <title>1. Pernyataan (Proposisi) &#8212; My book</title>
   
   
   
@@ -60,10 +60,11 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'logika';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="aljabar%20bolean%20dan%20gerbang%20logika.html" />
+    <link rel="next" title="for printing cardinality of" href="himpunan.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="aljabar%20bolean%20dan%20gerbang%20logika.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -115,8 +116,6 @@
       
       
       
-        
-      
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
@@ -136,7 +135,7 @@
     
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -157,14 +156,14 @@
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     Welcome to your Jupyter Book
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="logika.html">1. <strong>Pernyataan (Proposisi)</strong></a></li>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">1. <strong>Pernyataan (Proposisi)</strong></a></li>
 
 
 
@@ -250,7 +249,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Flogika.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -280,7 +279,7 @@
       
       
       
-      <li><a href="_sources/intro.md" target="_blank"
+      <li><a href="_sources/logika.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -343,7 +342,9 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -354,11 +355,29 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Welcome to your Jupyter Book</h1>
+    <h1>1. Pernyataan (Proposisi)</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">1. <strong>Pernyataan (Proposisi)</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#logika-proposisional">2. <strong>Logika Proposisional</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tabel-kebenaran">3. <strong>Tabel Kebenaran</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#logika-predikat">4. <strong>Logika Predikat</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tautologi-kontradiksi-dan-kontingensi">5. <strong>Tautologi, Kontradiksi, dan Kontingensi</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hukum-hukum-logika">6. <strong>Hukum-Hukum Logika</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#penalaran-deduktif">7. <strong>Penalaran Deduktif</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#kesetaraan-logika-logical-equivalence">8. <strong>Kesetaraan Logika (Logical Equivalence)</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#implikasi-dan-kontraposisi">9. <strong>Implikasi dan Kontraposisi</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#paradoks-dalam-logika">10. <strong>Paradoks dalam Logika</strong></a></li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -368,32 +387,99 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="welcome-to-your-jupyter-book">
-<h1>Welcome to your Jupyter Book<a class="headerlink" href="#welcome-to-your-jupyter-book" title="Link to this heading">#</a></h1>
-<p>This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out <a class="reference external" href="https://jupyterbook.org">the Jupyter Book documentation</a> for more information.</p>
-<p>Check out the content pages bundled with this sample book to see more.</p>
-<div class="toctree-wrapper compound">
+  <p><strong>Matematika Logika</strong> adalah cabang matematika yang mempelajari prinsip-prinsip penalaran dan argumen yang valid. Ia menjadi dasar bagi banyak disiplin ilmu, termasuk ilmu komputer, filsafat, dan linguistik. Berikut adalah ringkasan dari konsep-konsep utama dalam matematika logika:</p>
+<section id="pernyataan-proposisi">
+<h1>1. <strong>Pernyataan (Proposisi)</strong><a class="headerlink" href="#pernyataan-proposisi" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p><strong>Pernyataan</strong> adalah kalimat yang memiliki nilai benar atau salah, tetapi tidak keduanya.</p></li>
+<li><p>Contoh:</p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="logika.html">1. <strong>Pernyataan (Proposisi)</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="logika.html#logika-proposisional">2. <strong>Logika Proposisional</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="logika.html#tabel-kebenaran">3. <strong>Tabel Kebenaran</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="logika.html#logika-predikat">4. <strong>Logika Predikat</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="logika.html#tautologi-kontradiksi-dan-kontingensi">5. <strong>Tautologi, Kontradiksi, dan Kontingensi</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="logika.html#hukum-hukum-logika">6. <strong>Hukum-Hukum Logika</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="logika.html#penalaran-deduktif">7. <strong>Penalaran Deduktif</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="logika.html#kesetaraan-logika-logical-equivalence">8. <strong>Kesetaraan Logika (Logical Equivalence)</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="logika.html#implikasi-dan-kontraposisi">9. <strong>Implikasi dan Kontraposisi</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="logika.html#paradoks-dalam-logika">10. <strong>Paradoks dalam Logika</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="himpunan.html">for printing cardinality of</a></li>
-<li class="toctree-l1"><a class="reference internal" href="himpunan.html#id1">for printing cardinality of</a></li>
-<li class="toctree-l1"><a class="reference internal" href="UAS%20MATDIS.html">SOAL 1</a></li>
-<li class="toctree-l1"><a class="reference internal" href="UAS%20MATDIS.html#soal-2">soal 2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="UAS%20MATDIS.html#insert-image">INSERT IMAGE</a></li>
+<li><p>“2 + 2 = 4” (benar).</p></li>
+<li><p>“Bumi itu datar” (salah).</p></li>
 </ul>
-</div>
+</li>
+</ul>
+</section>
+<section id="logika-proposisional">
+<h1>2. <strong>Logika Proposisional</strong><a class="headerlink" href="#logika-proposisional" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p>Dalam logika proposisional, proposisi digabungkan dengan operator logika untuk membentuk proposisi baru.</p></li>
+<li><p>Operator logika dasar:</p>
+<ul>
+<li><p><strong>Negasi (¬)</strong>: Mengubah nilai kebenaran proposisi (¬P artinya “Tidak P”).</p></li>
+<li><p><strong>Konjungsi (∧)</strong>: “Dan” (P ∧ Q hanya benar jika P dan Q benar).</p></li>
+<li><p><strong>Disjungsi (∨)</strong>: “Atau” (P ∨ Q benar jika salah satu atau keduanya benar).</p></li>
+<li><p><strong>Implikasi (→)</strong>: “Jika…maka” (P → Q benar kecuali P benar dan Q salah).</p></li>
+<li><p><strong>Biimplikasi (↔)</strong>: “Jika dan hanya jika” (P ↔ Q benar jika P dan Q memiliki nilai yang sama).</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="tabel-kebenaran">
+<h1>3. <strong>Tabel Kebenaran</strong><a class="headerlink" href="#tabel-kebenaran" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p>Tabel kebenaran digunakan untuk menentukan nilai kebenaran dari proposisi yang lebih kompleks.</p></li>
+<li><p>Setiap kombinasi nilai benar dan salah dari proposisi-proposisi awal diperiksa untuk menentukan kebenaran pernyataan keseluruhan.</p></li>
+</ul>
+</section>
+<section id="logika-predikat">
+<h1>4. <strong>Logika Predikat</strong><a class="headerlink" href="#logika-predikat" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p><strong>Logika predikat</strong> memperluas logika proposisional dengan melibatkan variabel dan kuantor.</p></li>
+<li><p>Kuantor dasar:</p>
+<ul>
+<li><p><strong>Kuantor Universal (∀)</strong>: “Untuk semua” (∀x, P(x) artinya P benar untuk semua x).</p></li>
+<li><p><strong>Kuantor Eksistensial (∃)</strong>: “Ada” (∃x, P(x) artinya ada x sehingga P(x) benar).</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="tautologi-kontradiksi-dan-kontingensi">
+<h1>5. <strong>Tautologi, Kontradiksi, dan Kontingensi</strong><a class="headerlink" href="#tautologi-kontradiksi-dan-kontingensi" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p><strong>Tautologi</strong>: Pernyataan yang selalu benar, terlepas dari nilai kebenaran komponen-komponennya.</p></li>
+<li><p><strong>Kontradiksi</strong>: Pernyataan yang selalu salah.</p></li>
+<li><p><strong>Kontingensi</strong>: Pernyataan yang kadang benar dan kadang salah, tergantung pada nilai kebenaran komponen-komponennya.</p></li>
+</ul>
+</section>
+<section id="hukum-hukum-logika">
+<h1>6. <strong>Hukum-Hukum Logika</strong><a class="headerlink" href="#hukum-hukum-logika" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p>Ada berbagai hukum logika yang sering digunakan dalam penalaran:</p>
+<ul>
+<li><p><strong>Hukum Identitas</strong>: P ↔ P.</p></li>
+<li><p><strong>Hukum Negasi Ganda</strong>: ¬(¬P) ↔ P.</p></li>
+<li><p><strong>Hukum Distributif</strong>: P ∧ (Q ∨ R) ↔ (P ∧ Q) ∨ (P ∧ R).</p></li>
+<li><p><strong>Hukum De Morgan</strong>: ¬(P ∧ Q) ↔ (¬P ∨ ¬Q) dan ¬(P ∨ Q) ↔ (¬P ∧ ¬Q).</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="penalaran-deduktif">
+<h1>7. <strong>Penalaran Deduktif</strong><a class="headerlink" href="#penalaran-deduktif" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p><strong>Penalaran deduktif</strong> adalah proses menarik kesimpulan yang pasti berdasarkan premis-premis yang diberikan. Jika premis-premis benar dan argumen valid, maka kesimpulan pasti benar.</p></li>
+</ul>
+</section>
+<section id="kesetaraan-logika-logical-equivalence">
+<h1>8. <strong>Kesetaraan Logika (Logical Equivalence)</strong><a class="headerlink" href="#kesetaraan-logika-logical-equivalence" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p>Dua proposisi dikatakan <strong>setara secara logis</strong> jika mereka memiliki nilai kebenaran yang sama di setiap kemungkinan situasi.</p></li>
+</ul>
+</section>
+<section id="implikasi-dan-kontraposisi">
+<h1>9. <strong>Implikasi dan Kontraposisi</strong><a class="headerlink" href="#implikasi-dan-kontraposisi" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p>Implikasi (P → Q) secara logis setara dengan kontraposisi (¬Q → ¬P).</p></li>
+</ul>
+</section>
+<section id="paradoks-dalam-logika">
+<h1>10. <strong>Paradoks dalam Logika</strong><a class="headerlink" href="#paradoks-dalam-logika" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p>Terdapat beberapa paradoks dalam logika, seperti paradoks Russell, yang mengungkap keterbatasan dalam sistem formal tertentu.</p></li>
+</ul>
+<p>Matematika logika membentuk dasar bagi banyak aplikasi praktis, terutama dalam <strong>desain sirkuit digital</strong>, <strong>verifikasi perangkat lunak</strong>, <strong>kecerdasan buatan</strong>, dan <strong>teori himpunan</strong>.</p>
+<p><a class="reference external" href="https://www.ruangguru.com/blog/logika-matematika">https://www.ruangguru.com/blog/logika-matematika</a></p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -426,12 +512,21 @@ It does not go in-depth into any particular topic - check out <a class="referenc
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="right-next"
+    <a class="left-prev"
        href="aljabar%20bolean%20dan%20gerbang%20logika.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">&lt;no title&gt;</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="himpunan.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
+        <p class="prev-next-title">for printing cardinality of</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -441,6 +536,32 @@ It does not go in-depth into any particular topic - check out <a class="referenc
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">1. <strong>Pernyataan (Proposisi)</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#logika-proposisional">2. <strong>Logika Proposisional</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tabel-kebenaran">3. <strong>Tabel Kebenaran</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#logika-predikat">4. <strong>Logika Predikat</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tautologi-kontradiksi-dan-kontingensi">5. <strong>Tautologi, Kontradiksi, dan Kontingensi</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hukum-hukum-logika">6. <strong>Hukum-Hukum Logika</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#penalaran-deduktif">7. <strong>Penalaran Deduktif</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#kesetaraan-logika-logical-equivalence">8. <strong>Kesetaraan Logika (Logical Equivalence)</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#implikasi-dan-kontraposisi">9. <strong>Implikasi dan Kontraposisi</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#paradoks-dalam-logika">10. <strong>Paradoks dalam Logika</strong></a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
               
             
           </div>
